@@ -1,0 +1,86 @@
+
+/* главный заголовок color: #FFFFFF; */
+/* цвет заголовка H2  color: #212121; */
+/* цвет текста color: #757575; */
+/* цвет акцента color: #2196F3; */
+/* вторичный цвет фона background: #F5F4FA */
+/* первичный цвет фона background: #FFFFFF; */
+
+:root {
+    --primery-text-color:#212121;
+    --title-text-color: #757575;
+    --accent-color: #2196F3;
+    --primery-white-color: #ffffff;
+}
+
+
+body {
+    background-color: var(--primery-bg-color);
+    color: var(--title-text-color);
+}
+
+.logo {
+    color: var(--accent-color);
+}
+
+.studio {
+    color: var(--primery-text-color);
+}
+
+ul {
+    list-style: none;
+}
+/* 
+.site-nav a {
+    color: #212121;
+} */
+
+.site-nav :hover {
+    color: var(--accent-color);
+}
+
+/* site-nav */
+
+.site-nav .link {
+    color: var(--primery-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* auth-nav */
+/* 
+.auth-nav .link {
+    color: #212121;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: #2196F3;
+} */
+
+/* hero */
+
+.hero-title {
+    color: teal;
+}
+
+/* section */
+
+.section-title {
+    color: var(--primery-text-color);
+}
+
+.feature-list .title {
+    color: var(--primery-text-color);
+}
+
+
+/* button */
+
+.button {
+    color: var(--primery-white-color);
+    background-color: var(--accent-color);
+}
