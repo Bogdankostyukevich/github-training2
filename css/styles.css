@@ -6,6 +6,7 @@
 /* вторичный цвет фона background: #F5F4FA */
 /* первичный цвет фона background: #FFFFFF; */
 
+/* CSS-переменные */
 :root {
     --primery-text-color:#212121;
     --title-text-color: #757575;
@@ -13,18 +14,31 @@
     --primery-white-color: #ffffff;
 }
 
+/* index.html */
 
 body {
-    background-color: var(--primery-bg-color);
+    font-family: 'Roboto', sans-serif;
     color: var(--title-text-color);
 }
 
+/* шапка сайта */
+
 .logo {
     color: var(--accent-color);
+    font-size: 26px;
 }
 
-.studio {
+.page-header {
+    background-color: var(--primery-white-color)
+}
+
+.studio-header {
     color: var(--primery-text-color);
+    font-size: 26px;
+}
+
+.studio-footer {
+    color: var(--primery-white-color);
 }
 
 ul {
@@ -43,6 +57,7 @@ ul {
 
 .site-nav .link {
     color: var(--primery-text-color);
+    font-size: 14px;
 }
 
 .site-nav .link:hover,
@@ -50,24 +65,47 @@ ul {
     color: var(--accent-color);
 }
 
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+
 /* auth-nav */
-/* 
+
 .auth-nav .link {
-    color: #212121;
+    color: var(--title-text-color);
+    font-size: 14px;
 }
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: #2196F3;
-} */
-
-/* hero */
-
-.hero-title {
-    color: teal;
 }
 
-/* section */
+/* первая секция hero */
+
+.hero-title {
+    color: #ffffff;
+    font-size: 44px;
+}
+
+.background-hero {
+   background-color: #2F303A;
+}
+
+/* наши возможности */
+
+.appearance {
+    background-color: #E5E5E5;
+}
+
+/* наша команда */
+
+.backdrop {
+    background-color: #F5F4FA;
+}
+
+/* чем мы занимаемся */
 
 .section-title {
     color: var(--primery-text-color);
@@ -83,4 +121,105 @@ ul {
 .button {
     color: var(--primery-white-color);
     background-color: var(--accent-color);
+    font-size: 16px;
 }
+
+/* наши возможности */
+
+.title {
+    font-size: 14px;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.section-title {
+    font-size: 36px;
+}
+
+.name {
+    color: var(--primery-text-color);
+    font-size: 16px;
+}
+
+.profession {
+    color: var(--title-text-color);
+    font-size: 16px;
+}
+
+.auth-nav .address {
+    color: var(--primery-white-color);
+    font-size: 14px;
+}
+
+.auth-nav .contacts-link {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+.auth-nav .contacts-link:hover,
+.auth-nav .contacts-link:focus {
+    color: var(--accent-color);
+}
+
+/* portfolio.html */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: Var(--primery-text-color); 
+}
+
+/* шапка */
+
+.page-header{
+    background-color: var(--primery-white-color);
+}
+
+/* меню старницы */
+
+.aspect {
+    background-color: #E5E5E5;
+}
+
+.title {
+    color: var(--primery-text-color);
+    font-size: 18px;
+}
+
+.button {
+    color: var(--primery-text-color);
+    background-color: #F5F4FA;
+    font-size: 16px;
+}
+
+.element .btn:hover,
+.element .btn:focus {
+    color: var(--primery-white-color);
+    background-color: var(--accent-color);
+}
+
+/* основной контент */
+
+.container h2 {
+    color: var(--primery-text-color);
+    font-size: 18px;
+}
+
+.container p {
+    color: var(--title-text-color);
+    font-size: 16px;
+}
+
+/* подвал */
+
+.address {
+    color: var(--primery-white-color);
+    font-size: 14px;
+}
+
+.link {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
