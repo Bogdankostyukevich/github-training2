@@ -6,6 +6,11 @@
 /* вторичный цвет фона background: #F5F4FA */
 /* первичный цвет фона background: #FFFFFF; */
 
+/* var - variables - переменная */
+/* a, button - color: inherit; 
+- наследуй цвет шрифта от родителя */
+/* :hover, :focus - псевдокласы */
+
 /* CSS-переменные */
 :root {
     --primery-text-color:#212121;
@@ -15,16 +20,17 @@
 }
 
 /* index.html */
-
+/* body селектор, специфика - 1 */
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--title-text-color);
 
+    
     letter-spacing: 0.03em;
 }
 
 /* шапка сайта */
-
+/* .logo селектор класса, специфика - 10 */
 .logo {
     font-family: 'Raleway', sans-serif;
     color: var(--accent-color);
@@ -49,6 +55,7 @@ body {
     color: var(--primery-white-color);
 }
 
+/* убралт маркер у списка */
 ul {
     list-style: none;
 }
@@ -57,14 +64,15 @@ ul {
     color: #212121;
 } */
 
-.site-nav :hover {
+/* .site-nav :hover {
     color: var(--accent-color);
-}
+} */
 
 /* site-nav */
-
+/* селектор класса, специфика - 20 */
 .site-nav .link {
     color: var(--primery-text-color);
+    /* убрали нижнее подчеркивание */
     text-decoration: none;
 
     font-weight: 500;
@@ -72,7 +80,10 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-
+/* селектор класса, специфика - 30 */
+/* :hover - эфект при навидени шыши */
+/* :focus - эфект фокусировки, 
+когда нажал и держишь или ТАБ */
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
@@ -155,6 +166,7 @@ ul {
 .hero .button {
     color: var(--primery-white-color);
     background-color: var(--accent-color);
+    cursor: pointer;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -162,6 +174,7 @@ ul {
     line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;
+    padding: 10px 32px;
 }
 
 /* наши возможности */
@@ -198,7 +211,6 @@ ul {
 .profession {
     color: var(--title-text-color);
 
-    font-family: Roboto;
     font-size: 16px;
     line-height: 1.8;
 }
@@ -245,12 +257,15 @@ body {
 }
 
 .btn {
+    font-family: 'Roboto', sans-serif;
     color: var(--primery-text-color);
     background-color: #F5F4FA;
- 
+    cursor: pointer;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    padding: 6px 22px;
 }
 
 .element .btn:hover,
@@ -272,7 +287,6 @@ body {
 
 .container p {
     color: var(--title-text-color);
-    font-size: 16px;
 }
 
 .product {
@@ -288,7 +302,11 @@ body {
     line-height: 1.87;
 }
 
-/* подвал */
+.description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+}
 
 .address {
     color: var(--primery-white-color);
